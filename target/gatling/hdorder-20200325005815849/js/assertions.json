@@ -1,0 +1,45 @@
+{
+  "simulation": "order.HDOrder",
+  "simulationId": "hdorder",
+  "start": 1585097895849,
+  "description": "",
+  "scenarios": ["Create ORDER", "OAuth"],
+  "assertions": [
+{
+  "path": "Global",
+  "target": "max of response time",
+  "condition": "is less than",
+  "expectedValues": [1000.0],
+  "result": true,
+  "message": "Global: max of response time is less than 1000.0",
+  "actualValue": [132.0]
+},
+{
+  "path": "OAuthentication",
+  "target": "max of response time",
+  "condition": "is less than",
+  "expectedValues": [1000.0],
+  "result": true,
+  "message": "OAuthentication: max of response time is less than 1000.0",
+  "actualValue": [132.0]
+},
+{
+  "path": "getOrder",
+  "target": "max of response time",
+  "condition": "is less than",
+  "expectedValues": [1000.0],
+  "result": false,
+  "message": "Could not find stats matching assertion path List(getOrder)",
+  "actualValue": [-1]
+},
+{
+  "path": "Global",
+  "target": "percentage of successful events",
+  "condition": "is",
+  "expectedValues": [100.0],
+  "result": true,
+  "message": "Global: percentage of successful events is 100.0",
+  "actualValue": [100.0]
+}
+  ]
+}

@@ -1,0 +1,14 @@
+<testsuite name="simulationExecutor.order" tests="4" errors="0" failures="1" time="0">
+<testcase name="Global: max of response time is less than 1000.0" status="true" time="0">
+  <system-out>Global: max of response time is less than 1000.0</system-out>
+</testcase>
+<testcase name="OAuthentication: max of response time is less than 1000.0" status="true" time="0">
+  <system-out>OAuthentication: max of response time is less than 1000.0</system-out>
+</testcase>
+<testcase name="Could not find stats matching assertion path List(getOrder)" status="false" time="0">
+  <failure type="getOrder">Actual value: -1</failure>
+</testcase>
+<testcase name="Global: percentage of successful events is 100.0" status="true" time="0">
+  <system-out>Global: percentage of successful events is 100.0</system-out>
+</testcase>
+</testsuite>
