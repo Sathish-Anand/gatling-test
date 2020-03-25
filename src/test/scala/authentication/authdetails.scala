@@ -7,7 +7,7 @@ import io.gatling.http.Predef._
 
 import scala.concurrent.duration._
 
-class authdetails extends Simulation {
+object authdetails extends Simulation {
 
    val auth = scenario("authentication").
      exec(http("OAuthentication").
